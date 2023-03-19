@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25907592532",
+    "project_id": "vmeste-37290",
+    "storage_bucket": "vmeste-37290.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25907592532:android:03f8953903072b69545cc1",
+        "android_client_info": {
+          "package_name": "com.example.vmeste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25907592532-i01d59th9464h5fnec28u1guovbokh2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPoUvf_bNsGSgQ96wjDeRqk4k4tXIwsFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25907592532-i01d59th9464h5fnec28u1guovbokh2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
