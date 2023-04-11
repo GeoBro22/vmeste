@@ -16,6 +16,22 @@ vmeste - это революционная социальная сеть, пре
 - Navigation Component — фреймворк, позволяющий оптимизировать реализацию переходов по экранам
 - ViewModel и LiveData — Основныое составляющие паттерна MVVM
 
+## Демонстрация проекта
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://user-images.githubusercontent.com/91619570/231086724-f7ef9dde-6fee-4a2e-a1c8-004dc40006b0.png" align="middle" height="500px"></td>
+      <td><img src="https://user-images.githubusercontent.com/91619570/231088156-4453b7b1-2b22-48fb-b5fb-2c543ef804d9.png" align="middle" height="500px"></td>
+      <td><img src="https://user-images.githubusercontent.com/91619570/231088349-6975f281-4254-40f0-b0fe-8b8adaa9b212.png" align="middle" height="500px"></td>
+      <td><img src="https://user-images.githubusercontent.com/91619570/231088502-7076a839-c4ec-4bba-8034-49d9f307da8a.png" align="middle" height="500px"></td>
+    </tr>
+  </table>
+</div>
+
+
+
+
 ## Запуск проекта
 
 1. Клонирование репозитория
