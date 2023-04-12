@@ -14,3 +14,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "vmeste"
 include ':app'
+include ':ui:feature-chat'
+include ':ui:feature-messenger'
+include ':ui:feature-profile'
+include ':ui:feature-auth'
+include ':ui:feature-communities'
+include ':common:common-ui'
+include ':common:common-data'
