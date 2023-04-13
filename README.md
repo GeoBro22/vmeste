@@ -18,7 +18,7 @@ vmeste - это революционная социальная сеть, пре
 
 ## Демонстрация проекта
 
-<div align="center">'
+<div align="center">
   <table>
     <tr>
       <td><img src="https://user-images.githubusercontent.com/91619570/231086724-f7ef9dde-6fee-4a2e-a1c8-004dc40006b0.png" width="100%" height="auto"></td>
