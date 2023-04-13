@@ -1,15 +1,16 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
     namespace 'com.example.vmeste.common.data'
-    compileSdk 33
+    compileSdk compileAndroidSdk
 
     defaultConfig {
-        minSdk 26
-        targetSdk 33
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
     }
 
     buildTypes {
@@ -28,7 +29,13 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation Libs.Google.Dagger
+    kapt Libs.Google.DaggerCompiler
+
+    implementation Libs.Google.Firebase.Auth
+    implementation Libs.Google.Firebase.RealtimeDatabase
+    implementation Libs.Google.Firebase.Storage
+
+    implementation Libs.JetBrains.Coroutines.Core
+    implementation Libs.JetBrains.Coroutines.PlayServices
 }

@@ -1,15 +1,16 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
     namespace 'com.example.vmeste.feature.profile'
-    compileSdk 33
+    compileSdk compileAndroidSdk
 
     defaultConfig {
-        minSdk 26
-        targetSdk 33
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
     }
 
     buildTypes {
@@ -24,9 +25,27 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
-    implementation(project(":common:common-data"))
-    implementation(project(":common:common-ui"))
+
+    implementation Libs.Android.CoreKtx
+    implementation Libs.Android.FragmentKtx
+    implementation Libs.Android.RecyclerView
+    implementation Libs.Android.ConstraintLayout
+
+    implementation Libs.Stuff.Glide
+
+    implementation Libs.Google.Material
+
+    implementation Libs.Google.Dagger
+    kapt Libs.Google.DaggerCompiler
+
+    implementation Libs.JetBrains.Coroutines.Core
+
+    implementation project(Modules.Common.Data)
+    implementation project(Modules.Common.Ui)
 }

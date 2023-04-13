@@ -1,22 +1,18 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'com.google.gms.google-services'
     id 'kotlin-kapt'
 }
 
 android {
-    compileSdk 32
+    compileSdk compileAndroidSdk
 
     defaultConfig {
         applicationId "com.example.vmeste"
-        minSdk 26
-        targetSdk 32
-        compileSdk 33
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -38,12 +34,20 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation Libs.Android.CoreKtx
+    implementation Libs.Android.AppCompat
+    implementation Libs.Android.ConstraintLayout
+    implementation Libs.Android.Navigation.Fragments
+    implementation Libs.Android.Navigation.UI
 
-    // Navigation Component
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation Libs.Google.Material
+
+    implementation Libs.Google.Dagger
+    kapt Libs.Google.DaggerCompiler
+
+    implementation project(Modules.Features.Auth)
+    implementation project(Modules.Features.Communities)
+    implementation project(Modules.Features.Chat)
+    implementation project(Modules.Features.Messenger)
+    implementation project(Modules.Features.Profile)
 }
